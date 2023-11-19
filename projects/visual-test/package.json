@@ -1,0 +1,22 @@
+{
+  "name": "visual-test",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@babybeet/typescript-library-template": "file:../../dist"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.2",
+    "html-webpack-plugin": "^5.5.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "run:browser": "webpack serve --open --env type=browser",
+    "run:node": "webpack --env type=node && node dist/app.js",
+    "build:watch": "webpack --watch --env type=node"
+  }
+}

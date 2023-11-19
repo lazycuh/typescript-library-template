@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "importHelpers": true,
+    "target": "ES2018",
+    "outDir": "./build/esm"
+  }
+}

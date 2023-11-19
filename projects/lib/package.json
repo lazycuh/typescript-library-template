@@ -1,0 +1,24 @@
+{
+  "name": "@babybeet/typescript-library-template",
+  "description": "Replace this description according to your library's functionality",
+  "version": "0.0.1",
+  "author": {
+    "name": "Baby Beet"
+  },
+  "keywords": [
+    "typescript-library-template"
+  ],
+  "license": "MIT",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "types/index.d.ts",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babybeet/typescript-library-template"
+  }
+}
