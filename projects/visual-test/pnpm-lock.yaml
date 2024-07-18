@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@babybeet/typescript-library-template':
+  '@lazycuh/typescript-library-template':
     specifier: file:../../dist
     version: file:../../dist
 
@@ -2479,5 +2479,5 @@ packages:
 
   file:../../dist:
     resolution: {directory: ../../dist, type: directory}
-    name: '@babybeet/typescript-library-template'
+    name: '@lazycuh/typescript-library-template'
     dev: false

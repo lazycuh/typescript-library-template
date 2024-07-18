@@ -1,4 +1,4 @@
-# typescript-library-template [![](https://circleci.com/gh/babybeet/typescript-library-template.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/babybeet/typescript-library-template?branch=main)
+# typescript-library-template [![](https://circleci.com/gh/lazycuh/typescript-library-template.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/lazycuh/typescript-library-template?branch=main)
 
 This repository contains a complete scaffold that allows you to get started creating your Typescript libraries with ease, below is the list of features:
 
@@ -9,7 +9,7 @@ This repository contains a complete scaffold that allows you to get started crea
 - [Husky](https://typicode.github.io/husky/).
 - [lint-staged](https://www.npmjs.com/package/lint-staged) that will run ESLint, Prettier and a custom script to automatically re-generate the table of contents on every commit.
 - [Prettier](https://prettier.io/).
-- Unit testing with [Jest](https://jestjs.io/).
+- Unit testing with [Vitest](https://vitest.dev/).
 - CI/CD with [CircleCI](https://circleci.com/).
 
 ## Table of contents
@@ -31,19 +31,19 @@ This repository contains a complete scaffold that allows you to get started crea
 - `npm`
 
   ```
-  npm i -S @babybeet/eslint-config-base-with-jest
+  npm i -S @lazycuh/typescript-library-template
   ```
 
 - `pnpm`
 
   ```
-  pnpm i -S @babybeet/eslint-config-base-with-jest
+  pnpm i -S @lazycuh/typescript-library-template
   ```
 
 - `yarn`
 
   ```
-  yarn add @babybeet/eslint-config-base-with-jest
+  yarn add @lazycuh/typescript-library-template
   ```
  -->
 
@@ -57,9 +57,9 @@ Be sure to add anything that you'd like to export to **lib/src/index.ts**, or el
 
 ### Testing
 
-Add your test files next to the source files that you want to test, I chose this pattern instead of placing all of the test files inside a separate folder called **\_\_tests\_\_** because it is easier to see which modules already have a corresponding test file. Your test files should end with **.test.ts** for Jest to pick up.
+Add your test files next to the source files that you want to test, I chose this pattern instead of placing all of the test files inside a separate folder called **\_\_tests\_\_** because it is easier to see which modules already have a corresponding test file. Your test files should end with **.test.ts** for Vitest to pick up.
 
-Execute `pnpm test` to run all of your unit tests or `pnpm test -- --watch` to run all of your tests in watch mode. If you need to run a specific test file, pass its name like this `pnpm test -- add` assuming that there exists a test file named **add.test.ts** (`npm test -- Ad` also works thanks to Jest's case-insensitive partial matching).
+Execute `pnpm test` to run all of your unit tests or `pnpm test -- --watch` to run all of your tests in watch mode. If you need to run a specific test file, pass its name like this `pnpm test -- add` assuming that there exists a test file named **add.test.ts** (`npm test -- Ad` also works thanks to Vitest's case-insensitive partial matching).
 
 ### Building and publishing
 

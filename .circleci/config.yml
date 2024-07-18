@@ -3,13 +3,13 @@ version: 2.1
 parameters:
   node-image:
     type: string
-    default: "node:18"
+    default: "node:18.20.3"
 
 install-pnpm: &install-pnpm
   name: Installing pnpm package manager
   command: |
     corepack enable
-    corepack prepare pnpm@latest-8 --activate
+    corepack prepare pnpm@latest-9 --activate
 
 jobs:
   versioning:
@@ -64,7 +64,7 @@ jobs:
             pnpm check-code-styles
             pnpm lint
 
-  unit-testing:
+  testing:
     docker:
       - image: cimg/node:18.18.2-browsers
     steps:
@@ -116,7 +116,7 @@ workflows:
       - linting:
           requires:
             - installation
-      - unit-testing:
+      - testing:
           requires:
             - installation
       - building:
@@ -130,5 +130,5 @@ workflows:
             - npm
           requires:
             - linting
-            - unit-testing
+            - testing
             - building

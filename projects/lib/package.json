@@ -1,5 +1,5 @@
 {
-  "name": "@babybeet/typescript-library-template",
+  "name": "@lazycuh/typescript-library-template",
   "description": "Replace this description according to your library's functionality",
   "version": "0.0.1",
   "author": {
@@ -19,6 +19,6 @@
   "peerDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/babybeet/typescript-library-template"
+    "url": "git+https://github.com/lazycuh/typescript-library-template"
   }
 }

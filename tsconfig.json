@@ -22,9 +22,10 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "target": "ES2022",
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "types": ["vitest"]
   },
   "exclude": ["node_modules", "dist", ".ignored"]
 }
